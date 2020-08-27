@@ -1,0 +1,1 @@
+replaceitem entity @a[tag=!-inv] armor.head stone_button{HideFlags:2,Damage:0,AttributeModifiers:[{UUIDMost:799903368505347448L,UUIDLeast:-7576071822263333084L,Amount:1.0d,AttributeName:"generic.knockbackResistance",Operation:0,Name:"generic.knockbackResistance"}]}
