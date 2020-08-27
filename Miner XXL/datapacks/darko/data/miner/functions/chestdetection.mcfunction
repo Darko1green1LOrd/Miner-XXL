@@ -1,1 +1,0 @@
-execute as @e[type=item,tag=aditem] at @s run scoreboard players reset @a[scores={chestdet=1..},distance=..2] chestdet
