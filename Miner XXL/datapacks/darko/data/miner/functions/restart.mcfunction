@@ -1,5 +1,5 @@
 #Ground
-fill 1 12 1 13 6 13 air replace
+fill 1 12 1 13 6 13 air replace #minerutility:room
 fill 7 7 9 7 7 5 dark_oak_planks replace
 fill 5 7 7 9 7 7 dark_oak_planks replace
 fill 5 7 6 6 7 6 brown_stained_glass replace
@@ -216,12 +216,10 @@ setblock 12 9 7 dark_oak_wall_sign[facing=west] replace
 scoreboard objectives remove stn
 scoreboard objectives add stn dummy ["",{"text":"Mined Stone","bold":true,"color":"gray"}]
 scoreboard objectives setdisplay sidebar stn
-scoreboard players set @a stn -1
+scoreboard players set @a stn 0
 #Armor Stands
 kill @e[type=armor_stand,tag=stone]
 summon minecraft:armor_stand 7 8 7 {Small:1b,Invisible:1b,Marker:1b,Tags:["stone"]}
-kill @e[type=armor_stand,tag=stonekiller]
-summon minecraft:armor_stand 7 11 7 {Small:1b,Invisible:1b,Marker:1b,Tags:["stonekiller"]}
 #detection
 scoreboard objectives remove upgrade
 scoreboard objectives add upgrade dummy 
@@ -244,3 +242,21 @@ scoreboard players set @a tieru 0
 scoreboard players set @a enchu 0
 scoreboard players set @a multu 0
 scoreboard players set @a effeu 0
+#Teams
+team remove default
+team add default
+team modify default friendlyFire false
+team modify default nametagVisibility hideForOwnTeam
+team modify default collisionRule never
+team modify default deathMessageVisibility hideForOwnTeam
+team modify default seeFriendlyInvisibles true
+team remove dev
+team add dev {"text":"Dev Mode ","bold":true,"color":"dark_red"}
+team modify dev prefix {"text":"Dev Mode ","bold":true,"color":"dark_red"}
+team remove ninvd
+team add ninvd {"text":"NoInv + Dev","bold":true,"color":"aqua"}
+team modify ninvd prefix {"text":"Dev Mode ","bold":true,"color":"dark_red"}
+team modify ninvd suffix {"text":" NoInv","bold":true,"color":"aqua"}
+team remove ninv
+team add ninv {"text":"NoInv","bold":true,"color":"aqua"}
+team modify ninv suffix {"text":" NoInv","bold":true,"color":"aqua"}

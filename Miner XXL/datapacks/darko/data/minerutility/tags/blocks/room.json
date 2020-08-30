@@ -1,0 +1,17 @@
+{
+  "values":[
+	"minecraft:gold_block",
+	"minecraft:spruce_log",
+	"minecraft:dark_oak_sign",
+	"minecraft:stripped_dark_oak_log",
+	"minecraft:magma_block",
+	"minecraft:nether_brick_wall",
+	"minecraft:brown_stained_glass",
+	"minecraft:dark_oak_planks",
+	"minecraft:dark_oak_stairs",
+	"minecraft:dark_oak_slab",
+	"minecraft:redstone_lamp",
+	"minecraft:redstone_block",
+	"minecraft:glowstone"
+  ]
+}
